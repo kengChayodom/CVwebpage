@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&display=swap');
+
 body {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 1)), 
     url('./img/Acheron2.gif');
@@ -5,8 +8,58 @@ body {
     background-size: cover;
     background-position: center; /* ให้ภาพอยู่กึ่งกลาง */
     background-attachment: fixed;
-    color: #E0E0E0; 
-    font-family: "Gill Sans", "Gill Sans MT", Helvetica, sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400; /* ปรับน้ำหนักฟอนต์ให้เบาลง */
+    line-height: 1.6; /* เพิ่มระยะห่างระหว่างบรรทัด */
+    color: #E0E0E0;
+    
+}
+
+section {
+    scroll-margin-top: 70px; /* ปรับค่าตามความสูงของ navbar */
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 400px; /* ปรับค่าตามความเหมาะสม */
+    object-fit: cover; /* ทำให้รูปไม่ยืดหรือบีบ แต่จะถูกครอบให้อยู่ในขนาดที่กำหนด */
+    border-radius: 10px; /* ทำให้ภาพมีมุมโค้ง (เลือกใส่หรือไม่ก็ได้) */
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5); /* สีดำโปร่งใส 50% */
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+
+.contact-list {
+    list-style: none;
+    padding-left: 25%;
+    
+}
+
+.contact-list li {
+    display: flex;
+    align-items: center;  /* จัดให้ไอคอนกับข้อความอยู่ตรงกลาง */
+    gap: 8px;  /* เพิ่มระยะห่างระหว่างไอคอนกับข้อความ */
+    margin-bottom: 8px;  /* เพิ่มระยะห่างระหว่างแต่ละแถว */
+}
+
+.contact-list i {
+    font-size: 14px;  /* ปรับขนาดไอคอน */
+    color: #E0E0E0;  /* เปลี่ยนสีไอคอนให้เข้ากับธีม */
+}
+
+.contact-list a {
+    text-decoration: none;
+    color: #E0E0E0;
+}
+
+.contact-list a:hover {
+    color: #fff;
+    text-decoration: underline;  /* เพิ่มขีดเส้นใต้เมื่อ hover */
 }
 
 .container {
@@ -17,33 +70,53 @@ body {
 .bold {
     font-weight: bold;
 }
+
 .divider {
-    border-top: 3px solid #E0E0E0;
-    margin: 20px 0;
+    border-top: 2px solid #E0E0E0;
+    margin: 10px 0;
 }
 
 .profile-img {
     width: 100%;
-    max-width: 200px; /* จำกัดขนาดสูงสุด */
-    border-radius: 10%;
-  }
-  
-.title {
-    color: #E0E0E0;
-    font-size: 24px;
-    font-weight: bold;
-    text-align: right;
+    max-width: 200px;
+    border-radius: 25%; /* ทำให้เป็นวงกลม */
+    border: 2px solid white; /* เพิ่มกรอบให้ดูชัด */
+    
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.second-title{
-    font-size: 16px;
+.profile-img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  
+.title {
+    
+    font-size: 28px;
+    font-weight: 600; /* ปรับน้ำหนักฟอนต์ให้กลางๆ */
+    letter-spacing: 0.5px; /* เพิ่มระยะห่างระหว่างตัวอักษร */
+    color: #E0E0E0;
+    margin-bottom: 10px; /* เพิ่มระยะห่างด้านล่าง */
+
 }
+
+.second-title {
+        font-size: 20px; /* เพิ่มขนาดฟอนต์เล็กน้อย */
+        font-weight: 500; /* ปรับน้ำหนักฟอนต์ให้กลางๆ */
+        color: #E0E0E0;
+        margin-bottom: 8px; /* เพิ่มระยะห่างด้านล่าง */
+}
+
 
 .descriptions-text {
     
+    font-size: 14px; /* เพิ่มขนาดฟอนต์เล็กน้อย */
+    line-height: 1.2; /* เพิ่มระยะห่างระหว่างบรรทัด */
+    font-weight: 300; /* ปรับน้ำหนักฟอนต์ให้เบาลง */
+    color: #E0E0E0;
     text-align: justify;
-    line-height: 1.5;
-    font-size: 12px;
+
     
 }
 
@@ -53,9 +126,6 @@ body {
     
 }
 
-/* .line{ 
-    border-bottom: 1px white ;
-} */
 
 .icon {
     width: 20px;
@@ -65,6 +135,7 @@ body {
 ืnav.nabar{
     margin: 20px; /* เพิ่ม margin ให้กับ navbar */
 }
+
 
 .bg-backhole{
     background: rgba(0, 0, 0, 0.8); /* ทำให้ navbar ชัดขึ้น */
@@ -81,7 +152,7 @@ body {
 }
 
 .progress-bar {
-    background: linear-gradient(135deg, #ffffff, #999999); /* สีแถบเงินไล่โทน */
+    background: linear-gradient(135deg, #ffffff, #817878); /* สีแถบเงินไล่โทน */
     color: black; /* สีตัวหนังสือดำ */
     font-weight: bold;
     text-shadow: 0 0 5px rgba(255, 255, 255, 0.8); /* ให้ตัวหนังสือดูมีแสง */
@@ -98,6 +169,18 @@ body {
     }
 }
 
+
+@media (max-width: 768px) {
+    .carousel-item img {
+      height: 300px; /* ลดขนาดภาพสำหรับแท็บเล็ต */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .carousel-item img {
+      height: 250px; /* ลดขนาดภาพสำหรับมือถือ */
+    }
+  }
 
 
 
