@@ -59,4 +59,22 @@ document.querySelectorAll('.navbar-nav a').forEach(anchor => {
   });
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+  // หาปุ่มที่เป็น navbar-toggler
+  const navbarToggler = document.querySelector('.navbar-toggler');
+  
+  // หาลิงค์ในเมนู
+  const navLinks = document.querySelectorAll('.navbar-nav a');
+
+  // เมื่อคลิกที่ลิงค์ใน nav-item
+  navLinks.forEach(link => {
+    link.addEventListener('click', function() {
+      // ถ้ามีการเปิดเมนูให้ปิด
+      if (navbarToggler.classList.contains('collapsed') === false) {
+        navbarToggler.click();
+      }
+    });
+  });
+});
+
 
