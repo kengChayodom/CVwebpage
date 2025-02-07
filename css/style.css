@@ -6,31 +6,26 @@ body {
     url('../img/Acheron2.gif');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center; /* ให้ภาพอยู่กึ่งกลาง */
+    background-position: center; 
     background-attachment: fixed;
     font-family: 'Inter', sans-serif;
-    font-weight: 400; /* ปรับน้ำหนักฟอนต์ให้เบาลง */
-    line-height: 1.6; /* เพิ่มระยะห่างระหว่างบรรทัด */
+    font-weight: 400; 
+    line-height: 1.6; 
     color: #E0E0E0;
     
 }
 
+.bg-backhole{
+    background: rgba(0, 0, 0, 0.8); 
+    backdrop-filter: blur(5px);
+    border-radius: 0;
+    background-position: center;
+}
+
 section {
-    scroll-margin-top: 70px; /* ปรับค่าตามความสูงของ navbar */
+    scroll-margin-top: 70px; 
 }
 
-.carousel-item img {
-    width: 100%;
-    height: 400px; /* ปรับค่าตามความเหมาะสม */
-    object-fit: cover; /* ทำให้รูปไม่ยืดหรือบีบ แต่จะถูกครอบให้อยู่ในขนาดที่กำหนด */
-    border-radius: 10px; /* ทำให้ภาพมีมุมโค้ง (เลือกใส่หรือไม่ก็ได้) */
-}
-
-.carousel-caption {
-    background: rgba(0, 0, 0, 0.5); /* สีดำโปร่งใส 50% */
-    padding: 10px;
-    border-radius: 10px;
-}
 
 
 
@@ -42,14 +37,14 @@ section {
 
 .contact-list li {
     display: flex;
-    align-items: center;  /* จัดให้ไอคอนกับข้อความอยู่ตรงกลาง */
-    gap: 8px;  /* เพิ่มระยะห่างระหว่างไอคอนกับข้อความ */
-    margin-bottom: 8px;  /* เพิ่มระยะห่างระหว่างแต่ละแถว */
+    align-items: left;  
+    gap: 8px;  
+    margin-bottom: 8px;  
 }
 
 .contact-list i {
-    font-size: 14px;  /* ปรับขนาดไอคอน */
-    color: #E0E0E0;  /* เปลี่ยนสีไอคอนให้เข้ากับธีม */
+    font-size: 12px;  
+    color: #E0E0E0; 
 }
 
 .contact-list a {
@@ -59,7 +54,7 @@ section {
 
 .contact-list a:hover {
     color: #fff;
-    text-decoration: underline;  /* เพิ่มขีดเส้นใต้เมื่อ hover */
+    text-decoration: underline;  
 }
 
 .container {
@@ -67,9 +62,6 @@ section {
     margin: auto;
 }
 
-.bold {
-    font-weight: bold;
-}
 
 .divider {
     border-top: 2px solid #E0E0E0;
@@ -79,8 +71,8 @@ section {
 .profile-img {
     width: 100%;
     max-width: 200px;
-    border-radius: 25%; /* ทำให้เป็นวงกลม */
-    border: 2px solid white; /* เพิ่มกรอบให้ดูชัด */
+    border-radius: 25%; 
+    border: 2px solid white; 
     
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -94,30 +86,29 @@ section {
 .title {
     
     font-size: 28px;
-    font-weight: 600; /* ปรับน้ำหนักฟอนต์ให้กลางๆ */
-    letter-spacing: 0.5px; /* เพิ่มระยะห่างระหว่างตัวอักษร */
+    font-weight: 600; 
+    letter-spacing: 0.5px; 
     color: #E0E0E0;
-    margin-bottom: 10px; /* เพิ่มระยะห่างด้านล่าง */
+    margin-bottom: 10px; 
 
 }
 
 .second-title {
-        font-size: 20px; /* เพิ่มขนาดฟอนต์เล็กน้อย */
-        font-weight: 500; /* ปรับน้ำหนักฟอนต์ให้กลางๆ */
-        color: #E0E0E0;
-        margin-bottom: 8px; /* เพิ่มระยะห่างด้านล่าง */
+    font-size: 20px; 
+    font-weight: 500; 
+    color: #E0E0E0;
+    margin-bottom: 8px; 
 }
 
 
 .descriptions-text {
     
-    font-size: 14px; /* เพิ่มขนาดฟอนต์เล็กน้อย */
-    line-height: 1.2; /* เพิ่มระยะห่างระหว่างบรรทัด */
-    font-weight: 300; /* ปรับน้ำหนักฟอนต์ให้เบาลง */
+    font-size: 14px; 
+    line-height: 1.2; 
+    font-weight: 300; 
     color: #E0E0E0;
     text-align: justify;
 
-    
 }
 
 .text {
@@ -127,39 +118,23 @@ section {
 }
 
 
-.icon {
-    width: 20px;
-    height: 20px;
-}
-
-ืnav.nabar{
-    margin: 20px; /* เพิ่ม margin ให้กับ navbar */
-}
-
-
-.bg-backhole{
-    background: rgba(0, 0, 0, 0.8); /* ทำให้ navbar ชัดขึ้น */
-    backdrop-filter: blur(5px);
-    border-radius: 0;
-    background-position: center;
-}
 
 .progress {
-    background-color: #222; /* สีพื้นหลัง progress เป็นสีดำ */
-    border-radius: 8px; /* มุมโค้งเล็กน้อย */
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); /* เงาอวกาศ */
+    background-color: #222; 
+    border-radius: 8px; 
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); 
     overflow: hidden;
 }
 
 .progress-bar {
-    background: linear-gradient(135deg, #ffffff, #817878); /* สีแถบเงินไล่โทน */
-    color: black; /* สีตัวหนังสือดำ */
+    background: linear-gradient(135deg, #ffffff, #817878); 
+    color: black; 
     font-weight: bold;
-    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8); /* ให้ตัวหนังสือดูมีแสง */
-    animation: pulse 2s infinite alternate ease-in-out; /* ทำให้แถบมี movement */
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8); 
+    animation: pulse 2s infinite alternate ease-in-out; 
 }
 
-/* ทำให้ progress-bar ดูมี movement */
+
 @keyframes pulse {
     0% {
         box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
@@ -170,15 +145,41 @@ section {
 }
 
 
+.carousel-item img {
+    width: 100%;
+    height: 400px; 
+    object-fit: cover; 
+    border-radius: 10px; 
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5); 
+    padding: 10px;
+    border-radius: 10px;
+}
+
 @media (max-width: 768px) {
     .carousel-item img {
-      height: 300px; /* ลดขนาดภาพสำหรับแท็บเล็ต */
+      height: 300px; 
+    }
+
+    .contact-list {
+        list-style: none;
+        padding-left: 10%;
+
+    }
+
+    .contact-list li {
+        display: flex;
+        align-items: left;  
+        gap: 5px;  
+        margin-bottom: 8px;  
     }
   }
   
   @media (max-width: 480px) {
     .carousel-item img {
-      height: 250px; /* ลดขนาดภาพสำหรับมือถือ */
+      height: 250px; 
     }
   }
 
